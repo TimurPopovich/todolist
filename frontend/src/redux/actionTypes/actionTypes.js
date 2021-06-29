@@ -1,0 +1,7 @@
+export const INITIAL_LIST_TASK = 'INITIAL_LIST_TASK'
+export const ADD_TASK = 'ADD_TASK'
+export const DELETE_TASK = 'DELETE_TASK'
+export const UPDATE_STATUS = 'UPDATE_STATUS'
+export const EDIT_TASK = 'EDIT_TASK'
+export const INIT_USER = 'INIT_USER'
+export const LOGOUT = 'LOGOUT'

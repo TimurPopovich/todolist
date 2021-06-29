@@ -1,0 +1,82 @@
+.input-field {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.row{
+  min-width: 300px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.collection{
+  min-width: 300px;
+  margin: auto;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.collection-item{
+  display: flex;
+  justify-content: space-between;
+}
+.startImg{
+  text-decoration:line-through red;
+  border-radius: 2px;
+}
+.containerForm {
+  max-width: 700px ;
+}
+.brand-logo{
+  margin-left: 20px;
+}
+nav{
+  background-color: rgb(4, 71, 62);
+  color: aliceblue;
+}
+.auth {
+  margin-top: 100px;
+  max-width: 700px;
+}
+
+.login {
+  margin-top: 100px;
+  max-width: 700px;
+}
+.auth,.login{
+  text-align: center;
+}
+.divProfile{
+  margin-top: 110px;
+}
+.textCenter{
+  text-align: center;
+}
+@keyframes addLi {
+  from {max-height: 0px}
+  to {max-height: 2000px}
+}
+.collection{
+  animation-name: addLi;
+  animation-duration: 3s;
+  animation-timing-function:linear;
+  margin-bottom: 100px;
+}
