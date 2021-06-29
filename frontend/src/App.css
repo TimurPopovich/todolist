@@ -6,7 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.App {
+min-width:300px
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -78,4 +80,11 @@ nav{
   animation-duration: 3s;
   animation-timing-function:linear;
   margin-bottom: 100px;
+}
+nav .brand-logos {
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    font-size: 2.1rem;
+    padding: 0;
 }
