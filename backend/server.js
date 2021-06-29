@@ -7,7 +7,7 @@ import path from 'path'
 
 const app = express();
 
-mongoose.connect('mongodb://localhost:27017/ListTask', {
+mongoose.connect('mongodb+srv://Admin:Beavers228@zoo.0mnlx.mongodb.net/Zoo', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
