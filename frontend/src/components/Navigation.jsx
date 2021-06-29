@@ -6,9 +6,6 @@ function Navigation() {
   const user = useSelector(state => state.user)
   const dispatch = useDispatch();
 
-  console.log(user);
-
-
   return (
     <nav>
       <div className="nav-wrapper">
