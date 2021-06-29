@@ -12,6 +12,8 @@ mongoose.connect('mongodb+srv://Admin:Beavers228@zoo.0mnlx.mongodb.net/todo', {
   useUnifiedTopology: true,
 })
 
+app.use(express.static(path.join(__dirname,'..','frontend','build')))
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors())
