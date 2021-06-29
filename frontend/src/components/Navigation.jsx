@@ -15,7 +15,7 @@ function Navigation() {
 
         <Link className="brand-logo" to='/'>TODO</Link>
 
-        <ul id="nav-mobile" className="right hide-on-med-and-down">
+        <ul id="nav-mobile" className="right">
 
           <li>{user.user !== null ? <Link to='/'>Главная</Link> : ''} </li>
 
