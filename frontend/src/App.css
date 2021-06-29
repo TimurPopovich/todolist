@@ -30,9 +30,8 @@
 }
 .collection{
   min-width: 300px;
+  max-width: 800px;
   margin: auto;
-  margin-left: 200px;
-  margin-right: 200px;
 }
 .collection-item{
   display: flex;
