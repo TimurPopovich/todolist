@@ -10,7 +10,7 @@ function Navigation() {
     <nav>
       <div className="nav-wrapper">
 
-        <Link className="brand-logo" to='/'>TODO</Link>
+        <Link className="brand-logos" to='/'>TODO</Link>
 
         <ul id="nav-mobile" className="right">
 
