@@ -3,6 +3,7 @@ import cors from 'cors'
 import mongoose from 'mongoose'
 import listRouter from './routes/List.routes.js'
 import userRouter from './routes/User.routes.js'
+import path from 'path'
 
 const app = express();
 
@@ -17,6 +18,10 @@ app.use(cors())
 
 app.use('/', listRouter);
 app.use('/', userRouter);
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname,'frontend','build', 'index.html'))
+})
 
 const port = process.env.PORT || 4000;
 
