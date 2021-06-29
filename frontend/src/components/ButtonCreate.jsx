@@ -7,7 +7,7 @@ function ButtonCreate(props) {
 
   const taskDelete = async (id) => {
 
-    const response = await fetch('http://localhost:4000/list', {
+    const response = await fetch('/list', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

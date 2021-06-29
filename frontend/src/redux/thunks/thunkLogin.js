@@ -1,6 +1,6 @@
 export const thunkLogin = (logInfo) => {
   return (dispatch) => {
-    fetch(`http://localhost:4000/login`, {
+    fetch(`/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'Application/json' },
       body: JSON.stringify({ logInfo }),

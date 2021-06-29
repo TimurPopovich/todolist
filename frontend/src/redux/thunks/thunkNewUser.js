@@ -1,6 +1,6 @@
 export const thunkNewUser = (newUser) => {
   return (dispatch) => {
-    fetch('http://localhost:4000/register', {
+    fetch('/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ newUser })

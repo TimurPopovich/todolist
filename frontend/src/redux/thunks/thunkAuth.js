@@ -1,7 +1,7 @@
 export const thunkAuth = () => {
   return (dispatch) => {
 
-    fetch('http://localhost:4000/auth', {
+    fetch('/auth', {
       headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
     }).then(data => data.json())
       .then(data => {

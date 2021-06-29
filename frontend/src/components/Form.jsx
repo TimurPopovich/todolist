@@ -19,7 +19,7 @@ function Form() {
 
       const title = task.current.value
 
-      const response = await fetch('http://localhost:4000/list', {
+      const response = await fetch('/list', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

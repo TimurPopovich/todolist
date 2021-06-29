@@ -9,7 +9,7 @@ function ButtonDelete(props) {
 
   const taskDelete = async (id) => {
 
-    const response = await fetch('http://localhost:4000/list', {
+    const response = await fetch('/list', {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
