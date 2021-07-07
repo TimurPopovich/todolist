@@ -1,6 +1,9 @@
 .input-field {
   text-align: center;
 }
+h1{
+  font-size: 2.2rem !important;
+}
 
 .App-logo {
   height: 40vmin;
