@@ -8,7 +8,7 @@ router.post('/list', async (req, res) => {
 
   const { title, id } = req.body;
 
-  const findUser = await User.findOne({ id: id })
+  const findUser = await User.findOne({ _id: id })
 
   const newPost = new List({
     title,
@@ -17,7 +17,9 @@ router.post('/list', async (req, res) => {
 
   await newPost.save();
 
-  findUser.list.push(newPost.id)
+  console.log(findUser, newPost);
+  findUser.list.push(newPost._id)
+  
 
   await findUser.save()
 

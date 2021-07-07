@@ -6,7 +6,7 @@ import ButtonTask from "./ButtonTask.jsx";
 function Form() {
 
   const dispatch = useDispatch()
-  const id = useSelector(state => state.user.id)
+  const id = useSelector(state => state.user._id)
 
   const task = useRef()
 
