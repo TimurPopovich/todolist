@@ -13,6 +13,6 @@ export const thunkNewUser = (newUser) => {
       })
       .then(data => dispatch({ type: 'INIT_USER', payload: data }))
       .then(data => localStorage.setItem('token', data.payload.token))
-      .catch((error) => console.log(error))
+      .catch((error) => alert(error))
   }
 }
