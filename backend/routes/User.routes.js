@@ -29,7 +29,7 @@ router.post('/register', async (req, res) => {
 
   const findUser = await User.findOne({ email: email })
 
-  if (findUser !== undefined && findUser !== null) {
+  if (findUser === undefined || findUser === null) {
     const newUser = new User({
       name,
       email,
